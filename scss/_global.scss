@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  font-family: "Squad";
+  font-weight: 400;
+  color: $primaryDark;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-family: "Cormorant Unicase";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 103.6%;
+  color: $primaryDark;
+}
+
+.btn {
+  padding: 20px;
+  background: #e25c45;
+  border-radius: 3px;
+  border: none;
+  color: $secondaryLight;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    background: #bf422b;
+    transition: all 0.3s ease;
+  }
+}
