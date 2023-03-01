@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Экскурсии в Костроме</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <button class="header__burger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="header__box">
+              <div class="logo">
+                <a class="logo__link" href="#">
+                  <img class="logo__img" src="images/logo.svg" alt="logo" />
+                </a>
+              </div>
+              <div class="header__desc">
+                <p class="header__title">Экскурсии в Костроме</p>
+                <p class="header__text">Обзорые экскурсии города</p>
+              </div>
+            </div>
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link">гЛАВНАЯ</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Экскурсии</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">кАТАЛОГ товаров</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Помощь</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">кОНТАКТЫ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__content">
+            <p class="header__content-text">Экскурсия №2</p>
+            <h1 class="header__content-title">Автобусно – пешеходная экскурсия по городу Костроме</h1>
+            <img class="header__content-img" src="images/decor.svg" alt="" />
+            <p class="header__content-info">
+              Экскурсия "Предприниматели и меценаты Костромской земли" предлагает организацию мероприятий, формат
+              которых будет сочетать экскурсию с тематическим спектаклем на тему истории проекта. Экскурсионный проект
+              «Предприниматели и меценаты Костромской земли» - своего рода, скромная дань признания славным делам,
+              упорному труду на ниве милосердия костромских предпринимателей и меценатов.
+            </p>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="excursions">
+          <div class="container">
+            <div class="excursions__inner">
+              <h2 class="title excursions__title">Наши экскурсии</h2>
+              <div class="excursions__radio">
+                <div class="excursions__radio-type">
+                  <input class="radio__input" type="radio" name="type" id="radio-1" checked />
+                  <label for="radio-1" class="radio__label">Групповые</label>
+                </div>
+                <div class="excursions__radio-type">
+                  <input class="radio__input" type="radio" name="type" id="radio-2" />
+                  <label for="radio-2" class="radio__label">Индивидуальные</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="excursions__box">
+              <div class="excursions__item">
+                <img class="excursions__img" src="images/excurs1.jpg" alt="img" />
+                <p class="header__content-text excursions__text">Экскурсия №1</p>
+                <h3 class="excursions__item-title">Предприниматели Костромской земли</h3>
+                <p class="excursions__item-text">
+                  На средства костромских купцов и промышленников были построены в Костроме учебные заведения, больницы,
+                  богадельни, приюты для детей, ночлежные дома, народные читальни, театры
+                </p>
+                <div class="excursions__info">
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Продолжительность</p>
+                    <p class="excursions__value">2 часа</p>
+                  </div>
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Начало</p>
+                    <p class="excursions__value">11:00, 16:00</p>
+                  </div>
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Стоимость</p>
+                    <p class="excursions__value">2 000 руб.</p>
+                  </div>
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Индивидуальная</p>
+                    <p class="excursions__value">1-10 чел.</p>
+                  </div>
+                </div>
+                <div class="excursions__button">
+                  <button class="btn excursions__btn">Купить билет</button>
+                </div>
+              </div>
+
+              <div class="excursions__item">
+                <img class="excursions__img" src="images/excurs2.jpg" alt="img" />
+                <p class="header__content-text excursions__text">Экскурсия №2</p>
+                <h3 class="excursions__item-title">Дом городского головы Г.Н. Ботникова</h3>
+                <p class="excursions__item-text">
+                  На средства костромских купцов и промышленников были построены в Костроме учебные заведения, больницы,
+                  богадельни, приюты для детей, ночлежные дома, народные читальни, театры
+                </p>
+                <div class="excursions__info">
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Продолжительность</p>
+                    <p class="excursions__value">2 часа</p>
+                  </div>
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Начало</p>
+                    <p class="excursions__value">11:00, 16:00</p>
+                  </div>
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Стоимость</p>
+                    <p class="excursions__value">2 000 руб.</p>
+                  </div>
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Индивидуальная</p>
+                    <p class="excursions__value">1-10 чел.</p>
+                  </div>
+                </div>
+                <div class="excursions__button">
+                  <button class="btn excursions__btn">Купить билет</button>
+                </div>
+              </div>
+
+              <div class="excursions__item">
+                <img class="excursions__img" src="images/excurs3.jpg" alt="img" />
+                <p class="header__content-text excursions__text">Экскурсия №3</p>
+                <h3 class="excursions__item-title">Кострома Кинематографическая</h3>
+                <p class="excursions__item-text">
+                  На средства костромских купцов и промышленников были построены в Костроме учебные заведения, больницы,
+                  богадельни, приюты для детей, ночлежные дома, народные читальни, театры
+                </p>
+                <div class="excursions__info">
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Продолжительность</p>
+                    <p class="excursions__value">2 часа</p>
+                  </div>
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Начало</p>
+                    <p class="excursions__value">11:00, 16:00</p>
+                  </div>
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Стоимость</p>
+                    <p class="excursions__value">2 000 руб.</p>
+                  </div>
+                  <div class="excursions__feature">
+                    <p class="excursions__property">Индивидуальная</p>
+                    <p class="excursions__value">1-10 чел.</p>
+                  </div>
+                </div>
+                <div class="excursions__button">
+                  <button class="btn excursions__btn">Купить билет</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container">
+            <h2 class="title about__title">О нас</h2>
+            <div class="about__inner">
+              <div class="about__articles">
+                <p class="about__text">
+                  Забота о ближнем, на протяжении всей истории Костромской земли, была одной из важных черт костромского
+                  предпринимательства. Жертвовать на церкви и монастыри вообще считалось святой обязанностью. Славной
+                  традицией в купеческо-промышленной среде было строительство новых храмов, пожертвования на стеновую
+                  роспись, отлив колоколов и покупка церковной утвари.
+                </p>
+                <p class="about__text">
+                  На средства костромских купцов и промышленников были построены в Костроме учебные заведения, больницы,
+                  богадельни, приюты для детей, ночлежные дома, народные читальни, театры.
+                </p>
+                <div class="about__link">
+                  <a class="about__link-certificate" href="#" download="">Сертификат 1</a>
+                  <a class="about__link-certificate" href="#" download="">Сертификат 2</a>
+                </div>
+                <h3 class="title about__subtitle">Что вас ждет</h3>
+                <ul class="about__list">
+                  <li class="about__item">
+                    Уникальные обзорные экскурсии города с увлекательными занятиями и посещением музеев и памятников
+                    архитектуры
+                  </li>
+                  <li class="about__item">
+                    Уникальные обзорные экскурсии города с увлекательными занятиями и посещением музеев и памятников
+                    архитектуры
+                  </li>
+                  <li class="about__item">
+                    Уникальные обзорные экскурсии города с увлекательными занятиями и посещением музеев и памятников
+                    архитектуры
+                  </li>
+                </ul>
+              </div>
+              <div class="about__picture">
+                <div class="about__img">
+                  <img src="images/about1.png" alt="" />
+                </div>
+                <div class="about__img">
+                  <img src="images/about2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product">
+          <div class="container">
+            <div class="product__inner">
+              <h2 class="title product__title">Товары</h2>
+              <img class="product__decor" src="images/decor.svg" alt="img" />
+            </div>
+
+            <div class="product__items">
+              <div class="product__item">
+                <img class="product__item-img" src="images/product1.jpg" alt="img" />
+                <h4 class="product__item-title">Икона именная святых освещена Святая Аглая</h4>
+                <div class="product__item-info">
+                  <div class="product__feature">
+                    <p class="product__property">Длина</p>
+                    <p class="product__value">25 см</p>
+                  </div>
+                  <div class="product__feature">
+                    <p class="product__property">Ширина</p>
+                    <p class="product__value">21 см</p>
+                  </div>
+                </div>
+                <p class="product__item-price">2 320 ₽<span>3 000 ₽</span></p>
+                <div class="product__item-button">
+                  <button class="btn product__item-btn">Подробнее</button>
+                </div>
+              </div>
+              <div class="product__item">
+                <img class="product__item-img" src="images/product2.jpg" alt="img" />
+                <h4 class="product__item-title">Икона именная святых освещена Святая Аглая</h4>
+                <div class="product__item-info">
+                  <div class="product__feature">
+                    <p class="product__property">Длина</p>
+                    <p class="product__value">25 см</p>
+                  </div>
+                  <div class="product__feature">
+                    <p class="product__property">Ширина</p>
+                    <p class="product__value">21 см</p>
+                  </div>
+                </div>
+                <p class="product__item-price">2 320 ₽<span>3 000 ₽</span></p>
+                <div class="product__item-button">
+                  <button class="btn product__item-btn">Подробнее</button>
+                </div>
+              </div>
+              <div class="product__item">
+                <img class="product__item-img" src="images/product3.jpg" alt="img" />
+                <h4 class="product__item-title">Икона именная святых освещена Святая Аглая</h4>
+                <div class="product__item-info">
+                  <div class="product__feature">
+                    <p class="product__property">Длина</p>
+                    <p class="product__value">25 см</p>
+                  </div>
+                  <div class="product__feature">
+                    <p class="product__property">Ширина</p>
+                    <p class="product__value">21 см</p>
+                  </div>
+                </div>
+                <p class="product__item-price">2 320 ₽<span>3 000 ₽</span></p>
+                <div class="product__item-button">
+                  <button class="btn product__item-btn">Подробнее</button>
+                </div>
+              </div>
+              <div class="product__item">
+                <img class="product__item-img" src="images/product4.jpg" alt="img" />
+                <h4 class="product__item-title">Икона именная святых освещена Святая Аглая</h4>
+                <div class="product__item-info">
+                  <div class="product__feature">
+                    <p class="product__property">Длина</p>
+                    <p class="product__value">25 см</p>
+                  </div>
+                  <div class="product__feature">
+                    <p class="product__property">Ширина</p>
+                    <p class="product__value">21 см</p>
+                  </div>
+                </div>
+                <p class="product__item-price">2 320 ₽<span>3 000 ₽</span></p>
+                <div class="product__item-button">
+                  <button class="btn product__item-btn">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contacts">
+          <div class="container">
+            <div class="contacts__inner">
+              <div class="contacts__image">
+                <img src="images/contacts-img.png" alt="img" />
+              </div>
+              <div class="contacts__content">
+                <h2 class="title contacts__title">Контакты</h2>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <p class="contacts__item-name">Оксана Ланшакова</p>
+                    <div class="contacts__connect">
+                      <a class="contacts__item-number" href="#">8-920-640-6955</a>
+                      <a class="contacts__item-social" href="#">
+                        <img src="images/telegram.svg" alt="icon" />
+                      </a>
+                      <a class="contacts__item-social" href="#">
+                        <img src="images/whatsapp.svg" alt="icon" />
+                      </a>
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <p class="contacts__item-name">Ольга</p>
+                    <div class="contacts__connect">
+                      <a class="contacts__item-number" href="#">8-910-803-0303</a>
+                      <a class="contacts__item-social" href="#">
+                        <img src="images/telegram.svg" alt="icon" />
+                      </a>
+                      <a class="contacts__item-social" href="#">
+                        <img src="images/whatsapp.svg" alt="icon" />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+                <div class="contacts__vk">
+                  <a class="contacts__vk-link" href="#">
+                    <img src="images/vk.svg" alt="" />
+                    Наша группа Вконтакте
+                  </a>
+                </div>
+                <h3 class="title contacts__subtitle">Подобрать экскурсию</h3>
+                <div class="contacts__form">
+                  <form class="form">
+                    <input class="contacts__input" type="text" placeholder="Имя" />
+                    <input class="contacts__input" type="tel" placeholder="Телефон" />
+                    <input class="contacts__input" type="email" placeholder="Email" />
+                    <input class="contacts__date" type="month" placeholder="Дата" />
+                    <select class="contacts__select" name="" id="">
+                      <option value="1">Экскурсия</option>
+                      <option value="2">aasd</option>
+                      <option value="3">qwwq</option>
+                    </select>
+                    <!-- <input class="contacts__input" type="text" placeholder="Экскурсия" /> -->
+                  </form>
+                </div>
+                <div class="contacts__agreement">
+                  <div class="contacts__checkbox">
+                    <input class="contacts__checkbox-input" type="checkbox" name="checkbox" id="checkbox" />
+                    <label class="contacts__checkbox-label" for="checkbox"
+                      >Я согласен с условиями <a href="#">Политики конфиденциальности</a>
+                    </label>
+                  </div>
+                  <button class="btn contacts__btn" type="submit">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <nav class="nav footer__nav">
+            <div class="header__box">
+              <div class="logo">
+                <a class="logo__link" href="#">
+                  <img src="images/logo.svg" alt="logo" />
+                </a>
+              </div>
+              <div class="header__desc">
+                <p class="header__title">Экскурсии в Костроме</p>
+                <p class="header__text">Обзорые экскурсии города</p>
+              </div>
+            </div>
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link">гЛАВНАЯ</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Экскурсии</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">кАТАЛОГ товаров</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Помощь</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">кОНТАКТЫ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__copyright">
+            <p class="footer__copy">© 2023. Экскурсии в Костроме</p>
+            <a class="footer__link" href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
