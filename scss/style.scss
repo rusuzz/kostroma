@@ -1,0 +1,689 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+@import "media";
+
+.header {
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 90px;
+  &__burger-btn {
+    display: none;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    span {
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 3px;
+      right: 0;
+      top: 0;
+      &:nth-child(1) {
+        transform: translateY(-6px);
+      }
+      &:nth-child(3) {
+        transform: translateY(6px);
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__desc {
+    margin-left: 20px;
+  }
+
+  &__title {
+    font-family: "Cormorant Unicase";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: $secondaryLight;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.54);
+  }
+
+  &__content {
+    padding-top: 115px;
+  }
+
+  &__content-text {
+    max-width: 156px;
+    background: rgba(255, 255, 255, 0.21);
+    backdrop-filter: blur(10.5px);
+    border-radius: 3px;
+    padding: 6px 15px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 16px;
+  }
+
+  &__content-title {
+    font-family: "Cormorant Unicase";
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 103.6%;
+    color: $secondaryLight;
+    max-width: 700px;
+    margin-bottom: 16px;
+  }
+
+  &__content-img {
+    margin-bottom: 28px;
+  }
+
+  &__content-info {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 606px;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  &__item {
+    margin-right: 25px;
+    margin-left: 25px;
+    position: relative;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: #cec8b8;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      right: -26px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $secondaryLight;
+    &:hover {
+      opacity: 0.7;
+      transition: all 0.2s linear;
+    }
+  }
+}
+
+.excursions {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 52px;
+  }
+
+  &__title {
+    max-width: 245px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/decor.svg);
+      width: 74px;
+      height: 20px;
+      top: 20px;
+      right: 10px;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__radio-type {
+    position: relative;
+  }
+}
+
+.radio {
+  &__input {
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    &:checked + .radio__label:after {
+      opacity: 1;
+    }
+  }
+
+  &__label {
+    padding-left: 17px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    color: $primaryDark;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 0;
+      z-index: 1;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: $secondaryLight;
+      border: 1px solid #d9d9d9;
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -5px;
+      z-index: 2;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: #e25c45;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.1s linear;
+    }
+  }
+}
+
+.excursions {
+  margin-bottom: 95px;
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    max-width: 467px;
+    position: relative;
+    padding-bottom: 33px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    margin-bottom: 25px;
+    max-height: 316px;
+  }
+
+  &__text {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+  }
+
+  &__item-title {
+    font-family: "Cormorant Unicase";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 33px;
+    color: $primaryDark;
+    margin-bottom: 15px;
+    padding: 0 33px;
+    max-width: 405px;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $primaryDark;
+    margin-bottom: 28px;
+    padding: 0 33px;
+  }
+
+  &__info {
+    margin-bottom: 28px;
+    padding: 0 33px;
+  }
+
+  &__feature {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    position: relative;
+    border-bottom: 1px dotted rgba(60, 61, 65, 0.3);
+  }
+
+  &__property,
+  &__value {
+    font-size: 17px;
+    line-height: 28px;
+    color: $primaryDark;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-right: 33px;
+    padding-left: 33px;
+    width: 100%;
+    margin-top: auto;
+  }
+
+  &__btn {
+    // padding: 0 33px 33px;
+    max-width: 400px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: 30%;
+      background-image: url(../images/ticket.svg);
+      width: 14px;
+      height: 18px;
+    }
+  }
+}
+
+.about {
+  background-image: url(../images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__title {
+    padding-top: 118px;
+    margin-bottom: 18px;
+  }
+
+  &__inner {
+    padding-bottom: 168px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    max-width: 743px;
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  &__link {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link-certificate {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: #e25c45;
+    position: relative;
+    padding-left: 25px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/certificate.svg);
+      width: 12px;
+      height: 14px;
+      top: 6px;
+      left: 0;
+    }
+    &:last-child {
+      padding-bottom: 50px;
+      border-bottom: 1px solid #a6a297;
+    }
+  }
+
+  &__subtitle {
+    font-size: 36px;
+    line-height: 37px;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    max-width: 700px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 28px;
+    padding-left: 27px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      background-color: #e25c45;
+      left: 0;
+      top: 10px;
+      border-radius: 50%;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.product {
+  margin: 90px 0 90px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-right: 20px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  &__item-img {
+    margin-bottom: 28px;
+  }
+
+  &__item-title {
+    font-family: "Cormorant Unicase";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 17px;
+  }
+
+  &__item-info {
+    font-size: 17px;
+    line-height: 28px;
+    color: rgba(60, 61, 65, 0.66);
+    margin-bottom: 28px;
+  }
+
+  &__feature {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted rgba(60, 61, 65, 0.3);
+  }
+
+  &__item-price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 22px;
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(60, 61, 65, 0.65);
+      text-decoration: line-through;
+      margin-left: 16px;
+    }
+  }
+}
+
+.contacts {
+  background-image: url(../images/contacts-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 89px;
+    padding-top: 100px;
+  }
+
+  &__content {
+    max-width: 710px;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 48px;
+    margin-bottom: 30px;
+  }
+
+  &__item-name {
+    font-size: 17px;
+    line-height: 26px;
+    color: rgba(60, 61, 65, 0.65);
+    margin-bottom: 5px;
+  }
+
+  &__connect {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item-number {
+    font-family: "Cormorant Unicase";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 29px;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: #3c3d41;
+  }
+
+  &__vk {
+    padding-bottom: 44px;
+    margin-bottom: 31px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      max-width: 710px;
+      width: 100%;
+      background-color: rgba(166, 162, 151, 0.24);
+    }
+  }
+
+  &__vk-link {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    font-size: 17px;
+    line-height: 26px;
+    color: $primaryDark;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  &__form {
+    margin-bottom: 44px;
+  }
+
+  &__input {
+    padding: 18px 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      font-family: "Squad";
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 26px;
+      color: #808184;
+    }
+  }
+
+  &__date {
+    padding: 18px 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    max-width: 345px;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__select {
+    padding: 18px 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    max-width: 345px;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__agreement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__checkbox-input {
+    appearance: none;
+    &:checked + .contacts__checkbox-label:after {
+      opacity: 1;
+    }
+  }
+
+  &__checkbox-label {
+    font-size: 17px;
+    line-height: 26px;
+    position: relative;
+    padding-left: 34px;
+    cursor: pointer;
+    transition: opacity 0.1s linear;
+    a {
+      color: #e25c45;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -8px;
+      width: 25px;
+      height: 25px;
+      background: #ffffff;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -2px;
+      width: 13px;
+      height: 13px;
+      background: #e25c45;
+      opacity: 0;
+    }
+  }
+
+  &__btn {
+    max-width: 260px;
+  }
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer {
+  background: #2e2f35;
+  &__nav {
+    padding: 45px 0;
+    position: relative;
+    margin-bottom: 28px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 1440px;
+      width: 100%;
+      height: 1px;
+      background: rgba(142, 176, 186, 0.49);
+    }
+  }
+
+  &__copyright {
+    padding-bottom: 114px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copy {
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.54);
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.54);
+  }
+}
